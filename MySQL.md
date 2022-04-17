@@ -169,8 +169,33 @@ select name, datediff(curdate(),entryday) as 'entrydays' from emp order by entry
 4. case when [語句]>或<'值A' then '返回值';
 
 ## constraint
+1. 非空約束 not null
+2. 唯一約束 unique
+3. 主鍵約束 primary key
+4. 默認約束 default
+5. 檢查約束 check
+6. 外鍵約束 (兩張表間的連接)foreign key
 ## 多表查詢
+1. 多表關系:
+   - 一對多 
+   - 多對多 
+   - 一對一
+2. 多表查詢
+   - 內連接 select [] from [tableA],[tableB] where [條件]
+   - 外連接(左連接,右連接)
+   - 自連接
+   - 子查詢
 ## 事務
-```mqsql
-
-```
+1. 事務簡介
+   - 操作的集合, 如轉帳操作
+2. 事務操作
+   - start transaction; 開啟事務
+   - commit/rollback; 提交/回滾
+3. 事務四大特性
+   - ACID
+4. 引發問題
+   - 脏讀
+   - 不可重復讀
+   - 幻讀
+5. 事務隔離級別
+   - 默認為repeatable read
