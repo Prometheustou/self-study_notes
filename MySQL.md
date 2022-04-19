@@ -12,7 +12,7 @@ net stop mqsql 以關閉
 ```
 連接客戶端
 ```mqsql
-mqsql -u root -p
+mysql -u root -p
 ```
 ### 3.RDBMS
 類似excel的表, 有一個統一格式(唯一標識)如id
